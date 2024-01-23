@@ -16,7 +16,7 @@ RUN unzip photogenic.zip && \
     rm -rf photogenic photogenic.zip
 
 # Expose ports
-EXPOSE 80 22
+EXPOSE 80 22 21
 
 # Start Apache in the foreground
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
