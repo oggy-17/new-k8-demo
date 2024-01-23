@@ -2,6 +2,6 @@
   become: true
   tasks:
     - name: Create New Deployment
-      command: kubectl apply -f /home/ubuntu/Deployment.yaml
+      command: kubectl apply -f /home/ubuntu/Deployment.yaml --validate=false
     - name: Create New Service
-      command: kubectl apply -f /home/ubuntu/Service.yaml
+      command: kubectl apply -f /home/ubuntu/Service.yaml --validate=false
